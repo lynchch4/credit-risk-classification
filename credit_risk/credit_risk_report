@@ -1,6 +1,14 @@
 Overview:
 
-    The purpose of this analysis was to train and evaluate models based on loan risk. to see how accurately they can differntiate between high-risk loans and regualer loans. The financial information the data was based on was the loan size, interest rate, borrower's income, number of accounts, derogatory marks, and total debt. This was used to see how accurately they can predict between high-risk loans and low-risk loans. Analysis was looking at loan status with 75,036 low-risk loans and 2500 high-risk loans for the training data. The stages of the maching learning processe started with creating a y variable from loan status and used the rest of the date X variables. then the data was split inot training and testing datasets. then we fit a regression model using the training data, saving the predictions for the x and y tests. Finished by evaluating the models performance with the accuracy score, confusion matrix, and classification report. With the second model, we fit the original training data to resampled data. then we fir the model fir a logistic regrssion model using the data. Finished by evaluating the models performance with the accuracy score, confusion matrix, and classification report. The methods used in this analysis was a logistic regression model with the original data and logistic regression model with resampled data to better represent the high-riske loan category as there were far fewer of those loans in the original sample.
+    The purpose of this analysis was to train and evaluate models based on loan risk. to see how accurately they can differntiate between high-risk loans and regualer loans. 
+The financial information the data was based on was the loan size, interest rate, borrower's income, number of accounts, derogatory marks, and total debt. This was used to see 
+how accurately they can predict between high-risk loans and low-risk loans. Analysis was looking at loan status with 75,036 low-risk loans and 2500 high-risk loans for the 
+training data. The stages of the maching learning processe started with creating a y variable from loan status and used the rest of the date X variables. then the data was 
+split inot training and testing datasets. then we fit a regression model using the training data, saving the predictions for the x and y tests. Finished by evaluating the 
+models performance with the accuracy score, confusion matrix, and classification report. With the second model, we fit the original training data to resampled data. then we 
+fit the model fir a logistic regrssion model using the data. Finished by evaluating the models performance with the accuracy score, confusion matrix, and classification report.
+The methods used in this analysis was a logistic regression model with the original data and logistic regression model with resampled data to better represent the high-risk 
+loan category as there were far fewer of those loans in the original sample.
 
 Models:
 
@@ -17,6 +25,8 @@ Models:
   
 Summary:
 
-    Of the two models the Logistic Regression Model with resampled data seemed to have work the best with a 0.05 increase in the balanced accuracy score. Well the low risk loans had similar preformance regardless only slightly lower recall in the second model, there was a marked improvement in the resampled model. This is important because it is much more beneficial to be able to predict a high-risk loan that has an increased chance in defaulting, then to mislable a low-risk loan as a high-risk loan.
+    Of the two models the Logistic Regression Model with resampled data seemed to have work the best with a 0.05 increase in the balanced accuracy score. Well the low risk 
+loans had similar preformance regardless only slightly lower recall in the second model, there was a marked improvement in the resampled model. This is important because 
+it is much more beneficial to be able to predict a high-risk loan that has an increased chance in defaulting, then to mislable a low-risk loan as a high-risk loan.
 
 
